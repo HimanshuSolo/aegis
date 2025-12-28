@@ -2,6 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from app.database import engine, Base
 from app.models import cloudflare_log, threat_detection
+from app.routers.ingest import router as ingest_router
 
 
 @asynccontextmanager
@@ -15,6 +16,8 @@ app = FastAPI(
     version="0.1.0",
     lifespan=lifespan
 )
+
+app.include_router(ingest_router)
 
 @app.get("/health")
 def health():
