@@ -1,7 +1,1 @@
-To build a system that detects potential DDoS attacks by analyzing traffic logs, enriching IP data with threat intelligence, applying machine learning for risk scoring, and visualizing malicious IPs geographically for improved security monitoring.
-
-- Identifying malicious traffic amidst high-volume legitimate requests
-- Reducing false negatives in security-critical detection
-- Integrating external IP reputation services efficiently
-- Designing an interpretable ML-based confidence scoring system
-- Visualizing large-scale IP data in an intuitive geographic format
+will write in detail...
